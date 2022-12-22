@@ -1,0 +1,19 @@
+{
+  "name": "nodepostgresql",
+  "version": "1.0.0",
+  "description": "API developed in node, using postgresql and docker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JColamaio/nodePostgreSQL.git"
+  },
+  "author": "JColamaio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JColamaio/nodePostgreSQL/issues"
+  },
+  "homepage": "https://github.com/JColamaio/nodePostgreSQL#readme"
+}
