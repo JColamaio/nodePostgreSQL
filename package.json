@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JColamaio/nodePostgreSQL/issues"
   },
-  "homepage": "https://github.com/JColamaio/nodePostgreSQL#readme"
+  "homepage": "https://github.com/JColamaio/nodePostgreSQL#readme",
+  "dependencies": {
+    "pg": "^8.8.0"
+  }
 }
