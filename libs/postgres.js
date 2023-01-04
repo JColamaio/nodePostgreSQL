@@ -6,7 +6,7 @@ async function getConnection(){
         port: 5432,
         user:'Jonathan',
         password:'admin123',
-        database:'my_store'
+        database:'postgres'
     });
 
     await client.connect();
