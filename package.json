@@ -4,7 +4,9 @@
   "description": "API developed in node, using postgresql and docker",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,22 @@
     "url": "https://github.com/JColamaio/nodePostgreSQL/issues"
   },
   "homepage": "https://github.com/JColamaio/nodePostgreSQL#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1"
+  },
+
   "dependencies": {
-    "pg": "^8.8.0"
+    "pg": "^8.8.0",
+    "@hapi/boom": "^10.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "joi": "^17.7.0"
+
   }
 }

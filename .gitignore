@@ -186,6 +186,9 @@ dist
 
 # Optional stylelint cache
 
+#postgres
+postgres_data
+
 # SvelteKit build / generate output
 .svelte-kit
 
