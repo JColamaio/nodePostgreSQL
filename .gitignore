@@ -189,6 +189,9 @@ dist
 #postgres
 postgres_data
 
+#mysql
+mysql
+
 # SvelteKit build / generate output
 .svelte-kit
 
