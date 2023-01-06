@@ -14,6 +14,6 @@ const sequelize = new Sequelize(URI, {
 // receiving connections
 setupModels(sequelize);
 // Syncing (after syncing will create the table)
-sequelize.sync();
+
 
 module.exports = sequelize;
