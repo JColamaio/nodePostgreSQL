@@ -7,12 +7,12 @@ const UserSchema = {
     allowNull: false,
     autoIncrement: true,
     primaryKey: true,
-    type: DataTypes.INTEGER
+    type: DataTypes.INTEGER,
   },
   email: {
     allowNull: false,
     type: DataTypes.STRING,
-    unique: true
+    unique: true,
   },
   password: {
     allowNull: false,
@@ -21,30 +21,29 @@ const UserSchema = {
   role: {
     allowNull: false,
     type: DataTypes.STRING,
-    defaultValue: 'customer'
+    defaultValue: 'customer',
   },
   createdAt: {
     allowNull: false,
     type: DataTypes.DATE,
     field: 'create_at',
-    defaultValue: Sequelize.NOW
-  }
-
-}
+    defaultValue: Sequelize.NOW,
+  },
+};
 // extending model relations
 class User extends Model {
-  static associate() {
-    // models
+  static associate(models) {
+    this.hasOne(models.Customer, { as: 'customer', foreignKey: 'userId' });
   }
 
   static config(sequelize) {
     return {
       sequelize,
       tableName: USER_TABLE,
-      modelName: "User",
-      timestamps: false
-    }
+      modelName: 'User',
+      timestamps: false,
+    };
   }
 }
 
-module.exports = { USER_TABLE, UserSchema, User }
+module.exports = { USER_TABLE, UserSchema, User };

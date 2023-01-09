@@ -6,6 +6,7 @@ function setupModels(sequelize) {
   User.init(UserSchema, User.config(sequelize));
   Customer.init(customerSchema, Customer.config(sequelize));
 // after the init if the models have an association you must declare them here
+  User.associate(sequelize.models);
   Customer.associate(sequelize.models)
 }
 
